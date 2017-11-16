@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block page_title 'Admin Dashboard' %}
+{% block title 'Admin Dashboard' %}
+
+{% block body %}
+    {# FIXME: Afficher Hello <firstname> <lastname> #}
+    Hello {{ app.user.firstname }} {{ app.user.lastname }}
+
+
+    {# FIXME: Lister les utilisateurs et afficher un lien de suppression #}
+
+    <ul>
+        {% for user in users %}
+        <li>
+            <a href="/profile/{{ user.id }}">{{ user.firstname }} {{ user.lastname }} - {{ user.email }}</a>
+            <a href="/admin//delete-user/{{ user.id }}">delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

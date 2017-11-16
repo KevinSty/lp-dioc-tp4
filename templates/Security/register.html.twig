@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block page_title 'Register' %}
+{% block title 'Register' %}
+
+{% block body %}
+    {#
+        FIXME:
+        Affiche le formulaire d'inscription avec les champs
+        firstname
+        lastname
+        email
+        password (répété)
+        birthday
+
+    #}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}

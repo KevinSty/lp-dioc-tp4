@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block page_title 'My Profile' %}
+{% block title 'My Profile' %}
+
+{% block body %}
+    {#
+        Fixme afficher sous forme de <ul> <li>
+        firstname
+        lastname
+        email
+        birthday
+        createAt
+        updatedAt
+    #}
+
+    <ul>
+        <li>First name: {{ app.user.firstname }}</li>
+        <li>Last name: {{ app.user.lastname }}</li>
+        <li>Email: {{ app.user.email }}</li>
+        <li>Birthday: {{ app.user.birthday }}</li>
+    </ul>
+{% endblock %}

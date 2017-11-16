@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block page_title %}{{ user.firstname }} {{ user.lastname }} Profile{% endblock %}
+{% block title %}{{ user.firstname }} {{ user.lastname }} Profile{% endblock %}
+
+{% block body %}
+    {#
+        Fixme afficher sous forme de <ul> <li>
+        firstname
+        lastname
+        email
+        birthday
+    #}
+
+    <ul>
+        <li>First name: {{ app.user.firstname }}</li>
+        <li>Last name: {{ app.user.lastname }}</li>
+        <li>Email: {{ app.user.email }}</li>
+        <li>Birthday: {{ app.user.birthday }}</li>
+    </ul>
+{% endblock %}
